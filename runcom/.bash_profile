@@ -31,7 +31,7 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,git_,docker,custom}; do
 #   [ -f "$DOTFILE" ] && . "$DOTFILE"
 # done
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
