@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # apply settings
-cp settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+cp $DOTFILES_DIR/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 
 # install extensions
 code --install-extension Arjun.swagger-viewer
