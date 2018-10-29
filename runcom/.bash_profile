@@ -42,9 +42,11 @@ done
 # fi
 
 # Set LSCOLORS
-
-eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
-
+if is-macos; then
+  eval "$(gdircolors "$DOTFILES_DIR"/system/.dir_colors)"
+else
+  eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
+fi
 # Hook for extra/custom stuff
 
 DOTFILES_EXTRA_DIR="$HOME/.extra"
