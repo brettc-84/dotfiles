@@ -9,7 +9,7 @@ prepend-path "/bin"
 prepend-path "/usr/bin"
 prepend-path "/usr/local/bin"
 # this replaces standard utils with gnu coreutils
-# prepend-path "$DOTFILES_BREW_PREFIX_COREUTILS/libexec/gnubin"
+prepend-path "$DOTFILES_BREW_PREFIX_COREUTILS/libexec/gnubin"
 prepend-path "$DOTFILES_DIR/bin"
 prepend-path "$HOME/bin"
 prepend-path "/sbin"
