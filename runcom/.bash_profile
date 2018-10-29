@@ -31,7 +31,7 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,git_,docker,custom}; do
 #   [ -f "$DOTFILE" ] && . "$DOTFILE"
 # done
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -42,11 +42,8 @@ done
 # fi
 
 # Set LSCOLORS
-if is-macos; then
-  eval "$(gdircolors "$DOTFILES_DIR"/system/.dir_colors)"
-else
-  eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
-fi
+eval "$(dircolors "$DOTFILES_DIR"/system/.dir_colors)"
+
 # Hook for extra/custom stuff
 
 DOTFILES_EXTRA_DIR="$HOME/.extra"
