@@ -19,6 +19,7 @@ apps=(
   # postgresql
   # psgrep
   shellcheck
+  tree
   unar
   wget
   # kubectl
