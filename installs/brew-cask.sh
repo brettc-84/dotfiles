@@ -12,6 +12,7 @@ brew tap caskroom/fonts
 apps=(
   dash2
   # dbeaver-community
+  docker
   gitkraken
   go2shell
   google-chrome
