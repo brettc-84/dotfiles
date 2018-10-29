@@ -31,15 +31,15 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,git_,docker,custom}; do
 #   [ -f "$DOTFILE" ] && . "$DOTFILE"
 # done
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,git_,docker,custom}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
-# if is-macos; then
-#   for DOTFILE in "$DOTFILES_DIR"/system/.{env,alias,function}.macos; do
-#     [ -f "$DOTFILE" ] && . "$DOTFILE"
-#   done
-# fi
+if is-macos; then
+  for DOTFILE in "$DOTFILES_DIR"/system/.{env,alias}.macos; do
+    [ -f "$DOTFILE" ] && . "$DOTFILE"
+  done
+fi
 
 # Set LSCOLORS
 eval "$(gdircolors "$DOTFILES_DIR"/system/.dir_colors)"
