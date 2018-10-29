@@ -19,7 +19,7 @@ prepend-path() {
 
 get() {
   echo "${!1}"
-}`
+}
 
 # Add to path
 
