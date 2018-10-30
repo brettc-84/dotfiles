@@ -31,7 +31,9 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,git_,docker,custom}; do
 #   [ -f "$DOTFILE" ] && . "$DOTFILE"
 # done
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,git_,docker,custom}; do
+
+# TODO: Docker aliases
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,git_,custom}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
