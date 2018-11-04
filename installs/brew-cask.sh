@@ -16,11 +16,11 @@ apps=(
   gitkraken
   go2shell
   google-chrome
+  iterm2
   postman
   vagrant
   visual-studio-code
   virtualbox
-  vlc
 )
 
 brew cask install "${apps[@]}"
