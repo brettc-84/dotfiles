@@ -35,6 +35,8 @@ ln -sfv "$DOTFILES_DIR/config/.editorconfig" ~
 # VSCode
 . "$DOTFILES_DIR/vscode/setup.sh"
 
+# Other settings
+. "$DOTFILES_DIR/system/dock.sh"
 # Run tests
 
 # if is-executable bats; then bats test/*.bats; else echo "Skipped: tests (missing: bats)"; fi
