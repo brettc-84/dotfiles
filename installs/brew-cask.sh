@@ -10,6 +10,7 @@ brew tap caskroom/fonts
 # Install packages
 
 apps=(
+  citrix-workspace
   dash2
   # dbeaver-community
   docker
@@ -18,6 +19,7 @@ apps=(
   google-chrome
   iterm2
   postman
+  robo-3T
   vagrant
   visual-studio-code
   virtualbox
