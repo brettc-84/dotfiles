@@ -19,6 +19,8 @@ nvm install --lts
 nvm use node
 nvm run node --version
 
+npm config set strict-ssl false
+
 # Globally install with npm
 
 packages=(
