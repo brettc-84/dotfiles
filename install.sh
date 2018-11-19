@@ -37,6 +37,7 @@ ln -sfv "$DOTFILES_DIR/config/.editorconfig" ~
 
 # My preferenes
 . "$DOTFILES_DIR/preferences/dock.sh"
+. "$DOTFILES_DIR/preferences/menuclock.sh"
 # Run tests
 
 # if is-executable bats; then bats test/*.bats; else echo "Skipped: tests (missing: bats)"; fi

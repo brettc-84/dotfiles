@@ -4,7 +4,7 @@ if ! is-macos -o; then
 fi
 
 # Tile size
-defaults write com.apple.dock tilesize -integer 32
+defaults write com.apple.dock tilesize -int 32
 # Enable magnification
 defaults write com.apple.dock magnification -bool TRUE
 # Magnification size
