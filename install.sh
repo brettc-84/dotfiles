@@ -2,7 +2,7 @@
 
 # Get current dir (so run this script from anywhere)
 
-export DOTFILES_DIR 
+export DOTFILES_DIR
 # DOTFILES_CACHE DOTFILES_EXTRA_DIR
 
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -37,7 +37,7 @@ ln -sfv "$DOTFILES_DIR/config/.editorconfig" ~
 
 # My preferenes
 . "$DOTFILES_DIR/preferences/dock.sh"
-. "$DOTFILES_DIR/preferences/menuclock.sh"
+. "$DOTFILES_DIR/preferences/menubar.sh"
 # Run tests
 
 # if is-executable bats; then bats test/*.bats; else echo "Skipped: tests (missing: bats)"; fi
