@@ -16,7 +16,7 @@ apps=(
   docker
   gitkraken
   go2shell
-#  google-chrome
+  google-chrome
   iterm2
   postman
   robo-3T
