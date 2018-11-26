@@ -18,6 +18,7 @@ apps=(
   go2shell
   google-chrome
   iterm2
+  java
   postman
   robo-3T
   slack
