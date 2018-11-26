@@ -12,7 +12,7 @@ brew tap caskroom/fonts
 apps=(
   citrix-workspace
   dash2
-  # dbeaver-community
+  dbeaver-community
   docker
   gitkraken
   go2shell
