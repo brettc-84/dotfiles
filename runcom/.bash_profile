@@ -33,7 +33,7 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # done
 
 # TODO: Docker aliases
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,git_,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,git_,custom}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -63,3 +63,4 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE EXTRAFILE
 # Export
 
 export DOTFILES_DIR DOTFILES_EXTRA_DIR
+

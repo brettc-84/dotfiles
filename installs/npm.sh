@@ -1,19 +1,21 @@
-if ! is-executable brew -o ! is-executable git; then
-  echo "Skipped: npm (missing: brew and/or git)"
+if ! is-executable git; then
+  echo "Skipped: node & npm (missing: git)"
   return
 fi
 
-brew install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
-mkdir -p ~/.nvm
+# brew install nvm
 
-#export DOTFILES_BREW_PREFIX_NVM=`brew --prefix nvm`
-#set-config "DOTFILES_BREW_PREFIX_NVM" "$DOTFILES_BREW_PREFIX_NVM" "$DOTFILES_CACHE"
+# mkdir -p ~/.nvm
 
-#. "${DOTFILES_DIR}/system/.nvm"
+# #export DOTFILES_BREW_PREFIX_NVM=`brew --prefix nvm`
+# #set-config "DOTFILES_BREW_PREFIX_NVM" "$DOTFILES_BREW_PREFIX_NVM" "$DOTFILES_CACHE"
 
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+# #. "${DOTFILES_DIR}/system/.nvm"
+
+# export NVM_DIR="$HOME/.nvm"
+# . "$(brew --prefix nvm)/nvm.sh"
 
 nvm install --lts
 nvm use node
