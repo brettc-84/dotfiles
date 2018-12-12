@@ -19,6 +19,7 @@ apps=(
   google-chrome
   iterm2
   java
+  lastfm
   postman
   robo-3T
   slack
