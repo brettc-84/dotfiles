@@ -20,6 +20,7 @@ apps=(
   iterm2
   java
   lastfm
+  minikube
   postman
   robo-3T
   slack
