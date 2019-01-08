@@ -14,6 +14,8 @@ apps=(
   # fasd
   # grep --with-default-names
   jq
+  kubectl
+  kubernetes-helms
   # mackup
   # mas
   # postgresql
@@ -22,7 +24,6 @@ apps=(
   tree
   unar
   wget
-  # kubectl
 )
 
 brew install "${apps[@]}"
