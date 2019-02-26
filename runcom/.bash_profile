@@ -28,10 +28,6 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Finally we can source the dotfiles (order matters)
 
-# for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,rvm,git_,docker,custom}; do
-#   [ -f "$DOTFILE" ] && . "$DOTFILE"
-# done
-
 # TODO: Docker aliases
 for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,git_,custom}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
@@ -41,6 +37,11 @@ if is-macos; then
   for DOTFILE in "$DOTFILES_DIR"/system/.{env,alias}.macos; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
   done
+fi
+
+# enable git completion
+if is-macos; then
+  [ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ] && . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 fi
 
 # Set LSCOLORS
