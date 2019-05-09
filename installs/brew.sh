@@ -16,6 +16,7 @@ apps=(
   jq
   kubectl
   kubernetes-helms
+  maven
   # mackup
   # mas
   # postgresql
