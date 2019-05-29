@@ -14,6 +14,7 @@ apps=(
   dash2
   dbeaver-community
   docker
+  gimp
   gitkraken
   go2shell
   google-chrome

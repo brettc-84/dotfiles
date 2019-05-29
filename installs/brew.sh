@@ -1,6 +1,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # brew tap Goles/battery
+brew analytics off
 brew update
 brew upgrade
 
