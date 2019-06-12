@@ -15,8 +15,7 @@ apps=(
   # fasd
   # grep --with-default-names
   jq
-  kubectl
-  kubernetes-helms
+  kubernetes-helm
   maven
   # mackup
   # mas
