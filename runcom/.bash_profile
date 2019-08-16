@@ -29,7 +29,7 @@ PATH="$DOTFILES_DIR/bin:$PATH"
 # Finally we can source the dotfiles (order matters)
 
 # TODO: Docker aliases
-for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,git_,custom}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{function,function_*,path,env,alias,completion,grep,prompt,nvm,git_,custom,jenv}; do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 

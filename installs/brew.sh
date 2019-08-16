@@ -14,6 +14,7 @@ apps=(
   elixir
   # fasd
   # grep --with-default-names
+  jenv
   jq
   kubernetes-helm
   maven
