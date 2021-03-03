@@ -10,24 +10,25 @@ brew tap caskroom/fonts
 # Install packages
 
 apps=(
-  citrix-workspace
-  dash2
-  dbeaver-community
+  #citrix-workspace
+  #dash2
+  #dbeaver-community
   docker
-  gimp
-  gitkraken
+  #gimp
+  #gitkraken
   go2shell
   google-chrome
+  insomnia
   iterm2
   java
   lastfm
-  minikube
-  postman
-  robo-3T
-  slack
-  vagrant
+  #minikube
+  #postman
+  #robo-3T
+  #slack
+  #vagrant
   visual-studio-code
-  virtualbox
+  #virtualbox
 )
 
 brew cask install "${apps[@]}"
