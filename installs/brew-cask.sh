@@ -3,7 +3,7 @@ if ! is-macos -o ! is-executable brew; then
  return
 fi
 
-brew tab homebrew/core
+brew tap homebrew/core
 brew tap homebrew/cask
 brew tap homebrew/cask-fonts
 
