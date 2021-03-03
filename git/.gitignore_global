@@ -3,6 +3,14 @@
 .DS_Store
 .idea
 .vscode
-node_modules
-bower_components
 npm-debug.log
+node_modules
+
+build/
+debug/
+dist/
+release/
+
+screenshots/
+reports/
+coverage/
