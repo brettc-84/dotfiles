@@ -11,12 +11,12 @@ apps=(
   bash-completion2
   coreutils
   dockutil
-  elixir
+  #elixir
   # fasd
   # grep --with-default-names
   jenv
   jq
-  kubernetes-helm
+  #kubernetes-helm
   maven
   # mackup
   # mas
