@@ -1,4 +1,4 @@
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # brew tap Goles/battery
 brew analytics off
@@ -8,6 +8,7 @@ brew upgrade
 # Install packages
 
 apps=(
+  awscli
   bash-completion2
   coreutils
   dockutil
