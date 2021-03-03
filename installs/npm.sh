@@ -32,7 +32,7 @@ npm config set strict-ssl false
 # Globally install with npm
 
 packages=(
-  electron
+  #electron
   nodemon
   npm
   nswag
