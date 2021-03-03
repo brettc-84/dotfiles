@@ -2,6 +2,12 @@
 
 These are my dotfiles, targetting macOS. Copied and modified with inspiration from https://github.com/rick-roche/dotfiles.git and https://github.com/webpro/dotfiles.
 
+## TODO:
+- [ ] Update for zsh issues (and/or set system bash version correctly)
+- [ ] Fix menu bar changes
+- [ ] Dock changes
+- [ ] Tests
+
 ## Getting Started
 
 These resources helped me understand the concepts and advantages of managing dotfiles.
