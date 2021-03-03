@@ -3,9 +3,9 @@ if ! is-macos -o ! is-executable brew; then
  return
 fi
 
-brew tap caskroom/versions
-brew tap caskroom/cask
-brew tap caskroom/fonts
+brew tab homebrew/core
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
 
 # Install packages
 
@@ -20,7 +20,7 @@ apps=(
   google-chrome
   insomnia
   iterm2
-  java
+  #java
   lastfm
   #minikube
   #postman
@@ -31,7 +31,7 @@ apps=(
   #virtualbox
 )
 
-brew cask install "${apps[@]}"
+brew install --cask "${apps[@]}"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package qlvideo
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package qlvideo
