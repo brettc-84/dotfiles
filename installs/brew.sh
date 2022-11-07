@@ -15,6 +15,7 @@ apps=(
   #elixir
   # fasd
   # grep --with-default-names
+  java
   jenv
   jq
   #kubernetes-helm

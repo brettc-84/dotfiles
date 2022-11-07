@@ -57,6 +57,12 @@ DOTFILES_EXTRA_DIR="$HOME/.extra"
 #   done
 # fi
 
+# aws aliases
+export AWS_PROFILE=adfs
+ADFS_DIR="~/Work/b2b/b2b-devops-productivity/iam"
+alias aws-connect="python3 $ADFS_DIR/adfs.py -p adfs -r eu-west-1 -c ~/.aws/credentials -k -s ssl.PROTOCOL_TLSv1 -n"
+
+
 # Clean up
 
 unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE EXTRAFILE
@@ -64,3 +70,4 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE EXTRAFILE
 # Export
 
 export DOTFILES_DIR DOTFILES_EXTRA_DIR
+. "$HOME/.cargo/env"

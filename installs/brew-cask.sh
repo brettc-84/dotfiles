@@ -19,6 +19,7 @@ apps=(
   go2shell
   google-chrome
   insomnia
+  intellij-idea
   iterm2
   #java
   lastfm
